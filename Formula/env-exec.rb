@@ -5,12 +5,12 @@
 class EnvExec < Formula
   desc "The Environment variable executor"
   homepage "https://polarn.net/"
-  version "0.3.0"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/polarn/env-exec/releases/download/0.3.0/env-exec_Darwin_x86_64.tar.gz"
-      sha256 "af74b1bf91cbe6523aac75b78f799686dc8b3536ef34314c24b1ec7d1b53cbf0"
+      url "https://github.com/polarn/env-exec/releases/download/0.8.0/env-exec_Darwin_x86_64.tar.gz"
+      sha256 "1f7ece45864044874dbca67ae9086c97b8c6310ca2ca02c522a1b72757f9f46f"
 
       def install
         bin.install "env-exec"
@@ -19,8 +19,8 @@ class EnvExec < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/polarn/env-exec/releases/download/0.3.0/env-exec_Darwin_arm64.tar.gz"
-      sha256 "e240fe76beaba03867532aa5f3dd87aa0c607ee91ddadd0fed3e3cca8ab297f8"
+      url "https://github.com/polarn/env-exec/releases/download/0.8.0/env-exec_Darwin_arm64.tar.gz"
+      sha256 "a101cd2ae920a40a905841c392cf6df6e1fee9612e96ef0e9a84c3340c912db0"
 
       def install
         bin.install "env-exec"
@@ -33,8 +33,8 @@ class EnvExec < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/polarn/env-exec/releases/download/0.3.0/env-exec_Linux_x86_64.tar.gz"
-        sha256 "d4ed77d4842303b873ff5f1ea0304f9a20eacc5a46d53a8745dbfbca2afee366"
+        url "https://github.com/polarn/env-exec/releases/download/0.8.0/env-exec_Linux_x86_64.tar.gz"
+        sha256 "a7e79908270a7520207b4cf49f2fa67902d580defbd6e362fe1ca76c01ff6251"
 
         def install
           bin.install "env-exec"
@@ -45,8 +45,8 @@ class EnvExec < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/polarn/env-exec/releases/download/0.3.0/env-exec_Linux_arm64.tar.gz"
-        sha256 "8584842134aafeb8819d13a1889b324f1e3018dd6dc3a2519631e38bac1745e5"
+        url "https://github.com/polarn/env-exec/releases/download/0.8.0/env-exec_Linux_arm64.tar.gz"
+        sha256 "a52508fda25c373d9740bae5df3df4012c487139a21bbb622a1ccdfc1ed443db"
 
         def install
           bin.install "env-exec"
