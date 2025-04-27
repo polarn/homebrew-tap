@@ -5,27 +5,23 @@
 class EnvExec < Formula
   desc "The Environment variable executor"
   homepage "https://github.com/polarn/env-exec"
-  version "0.13.0"
+  version "0.14.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/polarn/env-exec/releases/download/0.13.0/env-exec_Darwin_x86_64.tar.gz"
-      sha256 "96122abe2ef1a7d2bf0f9a8ea05622a868aeaad5794682acf38dc60047529c6f"
+      url "https://github.com/polarn/env-exec/releases/download/0.14.0/env-exec_Darwin_x86_64.tar.gz"
+      sha256 "607058cbc29104dafde75d9f1085c9349424cb3f9fb1dc883d656d796f61fd99"
 
       def install
         bin.install "env-exec"
-
-        generate_completions_from_executable(bin/"env-exec", "completion")
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/polarn/env-exec/releases/download/0.13.0/env-exec_Darwin_arm64.tar.gz"
-      sha256 "117721def64f2a3a0b821135f7b81e2743925b4b20b6850537b5873d9449c07f"
+      url "https://github.com/polarn/env-exec/releases/download/0.14.0/env-exec_Darwin_arm64.tar.gz"
+      sha256 "fcc54ed4a4f1d951298aa2d1a3a8adba4fc6cda0cdfec4eba9cd81f972d86ed0"
 
       def install
         bin.install "env-exec"
-
-        generate_completions_from_executable(bin/"env-exec", "completion")
       end
     end
   end
@@ -33,25 +29,21 @@ class EnvExec < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/polarn/env-exec/releases/download/0.13.0/env-exec_Linux_x86_64.tar.gz"
-        sha256 "35a219311f49799b36950f4786134d18d0a2952257bc28393a0f6b6e3c78d039"
+        url "https://github.com/polarn/env-exec/releases/download/0.14.0/env-exec_Linux_x86_64.tar.gz"
+        sha256 "7ae4a175600960c910f8955f78a3022750100bc554e83efad2813d7b55003906"
 
         def install
           bin.install "env-exec"
-
-          generate_completions_from_executable(bin/"env-exec", "completion")
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/polarn/env-exec/releases/download/0.13.0/env-exec_Linux_arm64.tar.gz"
-        sha256 "21804d51f843f9c16eac9dcc423b5947c99296ebb21bec37dc618653b58ef4ee"
+        url "https://github.com/polarn/env-exec/releases/download/0.14.0/env-exec_Linux_arm64.tar.gz"
+        sha256 "f3c54a8eb1970d18f900f91cbcde165022040644c31f480040d066fd4c712b48"
 
         def install
           bin.install "env-exec"
-
-          generate_completions_from_executable(bin/"env-exec", "completion")
         end
       end
     end
