@@ -5,20 +5,20 @@
 class EnvExec < Formula
   desc "The Environment variable executor"
   homepage "https://github.com/polarn/env-exec"
-  version "0.17.1"
+  version "0.17.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/polarn/env-exec/releases/download/0.17.1/env-exec_Darwin_x86_64.tar.gz"
-      sha256 "2dfacac4b377acb62d4d6310795f48abbbfd404e1ff31a81766b41a25c4dc42b"
+      url "https://github.com/polarn/env-exec/releases/download/0.17.2/env-exec_Darwin_x86_64.tar.gz"
+      sha256 "797730e1aff36937c7d430be888fb7c1fa5a0ecb4e6c97d44819c1f9c059cbef"
 
       def install
         bin.install "env-exec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/polarn/env-exec/releases/download/0.17.1/env-exec_Darwin_arm64.tar.gz"
-      sha256 "02ee666573f6fe2b9b87947420e154122bb968796524be9021260cb0c53ac717"
+      url "https://github.com/polarn/env-exec/releases/download/0.17.2/env-exec_Darwin_arm64.tar.gz"
+      sha256 "c63a33ae4a8ae9e63f89b3ebf2ee5f2c5d5eeb1e803289d7af4c977c4ea268a2"
 
       def install
         bin.install "env-exec"
@@ -28,15 +28,15 @@ class EnvExec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/polarn/env-exec/releases/download/0.17.1/env-exec_Linux_x86_64.tar.gz"
-      sha256 "7f9c3c0c3e3efeb1254ba378daae63dee63dc91eff576860da5d645bf3cc7a0e"
+      url "https://github.com/polarn/env-exec/releases/download/0.17.2/env-exec_Linux_x86_64.tar.gz"
+      sha256 "382d202c4d559bcf6366d9eba01be00f720d8bb43a37e5230ae1e8f5391c00c7"
       def install
         bin.install "env-exec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/polarn/env-exec/releases/download/0.17.1/env-exec_Linux_arm64.tar.gz"
-      sha256 "fc90f1209eba1e45df33741f334c37560f7845ca90c1f7ef6fc6237089eac89e"
+      url "https://github.com/polarn/env-exec/releases/download/0.17.2/env-exec_Linux_arm64.tar.gz"
+      sha256 "317c408859ec563b47955b94a6eba0c7af30988d1d1a72018d384df7adc4e262"
       def install
         bin.install "env-exec"
       end
