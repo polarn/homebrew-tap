@@ -3,7 +3,7 @@ cask "env-exec" do
   name "env-exec"
   desc "The Environment variable executor"
   homepage "https://github.com/polarn/env-exec"
-  version "0.18.1"
+  version "0.18.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "env-exec" do
   on_macos do
     on_intel do
       url "https://github.com/polarn/env-exec/releases/download/#{version}/env-exec_Darwin_x86_64.tar.gz"
-      sha256 "1b77e8cb215c6b7725b1015a9f6c178a474ace3c695df96ceceea946742abca2"
+      sha256 "11cbafb81a27ce69a745025767cb9a71eeba898f588de47e3bdaec17283cf87f"
     end
     on_arm do
       url "https://github.com/polarn/env-exec/releases/download/#{version}/env-exec_Darwin_arm64.tar.gz"
-      sha256 "4eb298b435f4c943ff1e47c3afed6fea2b08ba67b3d18130e8249edfb563a1b8"
+      sha256 "94da73c1ae2267fb93f997ecde45e6a8949b1b59cfee196c79dfafc4e21f7cca"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/polarn/env-exec/releases/download/#{version}/env-exec_Linux_x86_64.tar.gz"
-      sha256 "928e9441fecfac5ce2b627ec27476b5dfa8916f915e99a4915d44144e468ba8d"
+      sha256 "5d925fcda883ea22ef6e41706e257315c3292157bfea7724121ca7d38419098f"
     end
     on_arm do
       url "https://github.com/polarn/env-exec/releases/download/#{version}/env-exec_Linux_arm64.tar.gz"
-      sha256 "cf375326d0a199b662ec7da87cb758a6fd80ae11dd56c81ba014b5633c7d11fc"
+      sha256 "703282104a4123f6659a69f8505320d826e65c8ccd89a40016c88069c1b8ef0a"
     end
   end
 
